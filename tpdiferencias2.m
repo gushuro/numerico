@@ -1,5 +1,5 @@
-deltat = 1/10000;
-n = 100;
+function Uref = adi(deltat, n)
+deltat = deltat;
 Nx = n;
 Ny = n;
 deltax = 2.0/(Nx-1);
@@ -26,7 +26,7 @@ sparse(Dx);
 sparse(Dy);
 surf(X,Y,U);
 shading interp;
-view(0,90);
+view(0,50);
 pause(1)
 for i = 1:(0.5/deltat)
     Us = inv(eye(n-2)- (1/2 * deltat)*Dx)*((deltat/2)*(U*Dy'+f) + U);
@@ -34,6 +34,9 @@ for i = 1:(0.5/deltat)
     U = (Us+ (1/2 * deltat)*(Dx*Us +f))*inv(eye(n-2) - (deltat/2)* Dy');
     surf(X,Y,U);
     shading interp;
-    view(0,90);
+    view(0,50);
     pause(0.001)
 end
+Uref = U;
+
+
