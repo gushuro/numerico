@@ -1,0 +1,14 @@
+{
+    ".deps_version": 2, 
+    "g++ -O2 -c ./tp2.cpp -o ./tp2.o": {
+        ".": "input-5058f1af8388633f609cadb75a75dc9d", 
+        "tp2.cpp": "input-34d57965eeab7106adb1ca51d2b60966", 
+        "tp2.h": "input-f12173169a86813531cbf679db728ea0", 
+        "tp2.o": "output-35d406522ddb8e8eca65c995c9d35830"
+    }, 
+    "g++ -o ./tp ./tp2.o": {
+        ".": "input-5058f1af8388633f609cadb75a75dc9d", 
+        "tp": "output-1eb18e6a84c24e4635658a2eacd3e9b1", 
+        "tp2.o": "input-35d406522ddb8e8eca65c995c9d35830"
+    }
+}
